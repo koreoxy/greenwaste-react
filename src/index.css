@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.active {
+  @apply text-green-500;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* @layer base {
+  :root {
+    --background-color: #ffffff;
+    --color-green: #52c41a;
+    --color-green-light: #a5ea82;
+    --color-green-light2: #cff3bd;
+    --color-green-light3: #e9f7e2;
+    --color-green-dark: #1a643d;
+    --color-yellow: #c4b91a;
+    --color-yellow-light: #e8ea82;
+    --color-yellow-light2: #eff3bd;
+    --color-yellow-light3: #f7f7e2;
+    --color-yellow-dark: #54641a;
+    --color-gray: #bababa;
+    --color-gray-light: #f9f9f9;
+    --color-gray-dark: #727272;
+  }
+} */

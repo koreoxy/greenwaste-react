@@ -1,0 +1,40 @@
+.cardBerita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.imgCardBerita {
+    max-width: 100%; 
+    height: auto;    
+    margin-right: 20px;
+}
+
+.imgCardBerita img {
+    width: 100%;     
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.descriptionCardBerita {
+    max-width: 750px;
+    padding: 20px 0 20px 0;
+}
+
+.descriptionCardBerita p {
+    font-size: 16px;
+}
+
+.descriptionCardBerita p a {
+    color: #0073C6;;
+}
+
+.descriptionCardBerita h2 {
+    font-size: 20px;
+    font-weight: 600;
+}

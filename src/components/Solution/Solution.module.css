@@ -1,0 +1,284 @@
+:root {
+    --background-color: #ffffff;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-green: #52c41a;
+    --color-green-light: #a5ea82;
+    --color-green-light2: #cff3bd;
+    --color-green-light3: #e9f7e2;
+    --color-green-dark: #1a643d;
+    --color-yellow: #c4b91a;
+    --color-yellow-light: #e8ea82;
+    --color-yellow-light2: #eff3bd;
+    --color-yellow-light3: #f7f7e2;
+    --color-yellow-dark: #54641a;
+    --color-gray: #bababa;
+    --color-gray-light: #f9f9f9;
+    --color-gray-dark: #727272;
+  }
+  
+:root {
+    scroll-behavior: smooth;
+}
+  
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+
+.pagetitle {
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    max-height: 140px;
+}
+
+.pagetitle h1 {
+    font-size: 24px;
+}
+
+.herosection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF9F9;
+}
+
+.heroimage {
+    text-align: center;
+    min-width: 600px;
+    min-height: 400px;
+    margin: 10px;
+}
+
+.heroimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.herodescription {
+    text-align: center;
+    max-width: 600px;
+    max-height: 400px;
+    margin: 10px;
+}
+
+.herodescription h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #4C9D24;
+    margin-bottom: 20px;
+}
+
+.herodescription p{
+    font-size: 16px;
+}
+
+.categorywrapper {
+    background-color: #fff; 
+    padding: 20px;
+}
+
+.contentjudulcontainer {
+    padding: 30px;  
+    justify-content: center;
+    text-align: center;
+    max-height: 140px;
+}
+
+.contentjudulcontainer h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4C9D24;
+}
+
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+  
+.card {
+    flex: 1;
+    margin: 20px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #0DDA6D;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%; 
+    max-height: 260px; 
+    margin-bottom: 10px;
+}
+
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card a {
+    background-color: var(--color-green);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+.questionsection {
+    background-color: #86CB64;
+    padding: 40px 30px 40px 30px;
+}
+
+.titlequestion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titlequestion h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  
+}
+
+.listquestion ul li{
+    background-color: white ;
+    border-radius: 5px;
+    margin-right: 24px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.listquestion ul li p{
+    padding: 5px 15px;
+}
+
+.arrowcontainer {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    transform: rotate(0deg);
+}
+
+
+.answer {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+.contentjudulcontainer {
+    padding: 0;
+}
+
+.contentjudulcontainer h1{
+    font-size: 24px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+
+.card {
+    flex: 0 0 auto;
+    transform: scale(0.7);
+}
+
+.card img{
+    min-width: 300px;
+}
+
+.herosection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+    background-color: #FFF9F9;
+    
+}
+
+.heroimage {
+    min-width: 300px;
+    min-height: 200px;
+    margin: 0;
+}
+
+.heroimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.herodescription {
+    min-width: 300px;
+    min-height: 200px;
+    margin: 0;
+}
+
+.herodescription h1 {
+    font-size: 16px; 
+}
+
+.herodescription p {
+    font-size: 12px; 
+}
+
+.listquestion ul li p {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.answer{
+    font-size: 12px;
+}
+}
