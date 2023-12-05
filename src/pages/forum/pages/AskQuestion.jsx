@@ -50,7 +50,7 @@ function AskQuestion() {
     try {
       setLoading(true);
       setError(false);
-      const res = await fetch('/api/questions', {
+      const res = await fetch('https://api-greenwaste.vercel.app/api/questions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
