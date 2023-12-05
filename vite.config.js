@@ -11,6 +11,7 @@ export default ({ mode }) => {
           target: process.env.VITE_BASE_URL,
           changeOrigin: true,
           secure: false,
+          rewrite: (path) => path.replace(/^\api/, '/api'),
         },
       },
     },
